@@ -9,7 +9,7 @@ categories: 学习
 ----------
 - DL入门
 
- - LISA lab提供的Deep Learning Tutorial资料
+ - LISA lab提供的Deep Learning Tutorial
 http://www.deeplearning.net/tutorial/deeplearning.pdf
 
  - 用python和numpy手把手从零开始构建neural network
