@@ -477,3 +477,36 @@ if __name__ == '__main__':
     unittest.main()
 ```
 好了，下次再加吧。
+
+- cifar10图片提取
+自己实验中要用到cifar10的图片，官网给出的mat文件，从中可以很方便提取出来图片文件，图片的命名方式为label+batch_no. ,代码如下：
+```
+load('test_batch.mat')
+for i=1:10000
+    label=labels(i,:);
+    temp=data(i,:);
+    temp=reshape(temp,32,32,3);
+    switch label
+        case 0
+            imwrite(temp,[num2str(label),'_batch','_',num2str(i),'.jpg']);
+        case 1
+            imwrite(temp,[num2str(label),'_batch','_',num2str(i),'.jpg']);
+        case 2
+            imwrite(temp,[num2str(label),'_batch','_',num2str(i),'.jpg']);
+        case 3
+            imwrite(temp,[num2str(label),'_batch','_',num2str(i),'.jpg']);
+        case 4
+            imwrite(temp,[num2str(label),'_batch','_',num2str(i),'.jpg']);
+        case 5
+            imwrite(temp,[num2str(label),'_batch','_',num2str(i),'.jpg']);
+        case 6
+            imwrite(temp,[num2str(label),'_batch','_',num2str(i),'.jpg']);
+        case 7
+            imwrite(temp,[num2str(label),'_batch','_',num2str(i),'.jpg']);
+        case 8
+            imwrite(temp,[num2str(label),'_batch','_',num2str(i),'.jpg']);
+        case 9
+            imwrite(temp,[num2str(label),'_batch','_',num2str(i),'.jpg']);
+    end
+end
+```
